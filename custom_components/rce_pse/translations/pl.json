@@ -248,7 +248,7 @@
             "name": "Zalecane oszczędzanie"
           },
           "required_restriction": {
-            "name": "Wymagane ograniczanie"
+            "name": "Wymagane ograniczenie"
           }
         }
       },
@@ -265,7 +265,7 @@
             "name": "Zalecane oszczędzanie"
           },
           "required_restriction": {
-            "name": "Wymagane ograniczanie"
+            "name": "Wymagane ograniczenie"
           }
         }
       },
