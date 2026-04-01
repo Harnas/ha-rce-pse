@@ -1,26 +1,28 @@
-# Przykłady kart i dashboardu
+# Przykłady kart na dashboardzie
 
-Gotowy przykładowy dashboard (Lovelace, język interfejsu PL) znajduje się w repozytorium:
+Poniżej dwa gotowe układy kart do wyświetlania cen energii.
 
-- [examples/dashboard-lovelance-PL.yaml](../examples/dashboard-lovelance-PL.yaml)
+## 1. Zaawansowane wykresy (ApexCharts) – wymagana dodatkowa karta
 
-Zawiera m.in.:
+Karta z wykresami i analizą cen w czasie. Wymaga zainstalowanej karty ApexCharts w HACS.
 
-- wykresy cen dzisiaj i jutro (**ApexCharts Card**),
-- kafelki i listy encji (ceny, okna PSE, okna konfigurowalne, progi, sensory binarne),
-- drugi widok **Kompas Energetyczny** z siatką 24 godzin (kolory jak na stronie PSE) — wymaga **Button Card** z HACS.
+![Karta ApexCharts](../examples/images/card2_apexcharts.png)
 
-## Wymagania (HACS)
+**Konfiguracja:**  
+- [PL: examples/pl/card2_apexcharts_analysis.yaml](../examples/pl/card2_apexcharts_analysis.yaml)  
+- [EN: examples/en/card2_apexcharts_analysis.yaml](../examples/en/card2_apexcharts_analysis.yaml)
 
-| Karta | Repozytorium / nazwa w HACS |
-|-------|-----------------------------|
-| `custom:apexcharts-card` | ApexCharts Card |
-| `custom:button-card` | button-card |
+**Wymagania:**  
+- `apexcharts-card` – instalacja przez HACS → "ApexCharts Card"
 
-## Entity ID a język Home Assistant
+## 2. Podstawowy przegląd – bez dodatkowych zależności
 
-Identyfikatory encji (`sensor.rce_pse_…`, `binary_sensor.rce_pse_…`) są budowane m.in. z nazw tłumaczeń interfejsu. Przy **języku polskim** będą to slugi po polsku (np. `sensor.rce_pse_cena`, `sensor.rce_pse_kompas_energetyczny_dzisiaj`). Przy innym języku — odpowiedniki angielskie. Przed użyciem YAML sprawdź encje w **Narzędzia deweloperskie** i ewentualnie podmień `entity` w pliku.
+Prosty przegląd bieżących cen na podstawie standardowych encji Home Assistant.
 
-## Zrzuty ekranu
+![Karta podstawowa](../examples/images/card1_basic.png)
 
-Poprzednie osobne przykłady kart i grafiki w `examples/images/` zostały zastąpione jednym plikiem dashboardu; możesz dodać własne zrzuty do dokumentacji po dostosowaniu widoku u siebie.
+**Konfiguracja:**  
+- [PL: examples/pl/card1_basic_overview.yaml](../examples/pl/card1_basic_overview.yaml)  
+- [EN: examples/en/card1_basic_overview.yaml](../examples/en/card1_basic_overview.yaml)
+
+Karty można dowolnie dostosować do motywu i potrzeb: skopiuj YAML z pliku i wklej w edytorze dashboardu (tryb edycji karty).
