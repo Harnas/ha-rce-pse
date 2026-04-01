@@ -14,7 +14,7 @@
               "use_gross_prices": "Gross prices (with VAT)"
             },
             "data_description": {
-              "lite_mode": "Publishes only the current price and tomorrow price sensors. All statistics, period sensors, peak-hour sensors, custom windows, threshold sensors and all binary sensors are disabled.",
+              "lite_mode": "Publishes only the current price and tomorrow price sensors with attributes containing all prices for that day. All statistics, period sensors, peak-hour sensors, custom windows, threshold sensors and all binary sensors are disabled.",
               "price_unit": "Unit for all price sensors",
               "use_hourly_prices": "Useful in net-billing settlements due to prosumer metering with hourly accuracy despite 15-minute prices. In this mode, the average price for a given hour is calculated from published quarter-hour prices. Settlement according to Art. 4b sec. 11 of the Ustawa o OZE",
               "use_gross_prices": "When enabled, all prices are converted to gross using VAT (currently 23%), so you do not need to apply VAT in automations"
