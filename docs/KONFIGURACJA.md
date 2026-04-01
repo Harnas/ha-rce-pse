@@ -6,12 +6,16 @@ Po zainstalowaniu integracji możesz ją skonfigurować w interfejsie Home Assis
 
 ### Tryb Lite
 
-Tryb Lite upraszcza integrację do absolutnego minimum. Po jego włączeniu publikowane są tylko dwa sensory:
+Tryb Lite upraszcza integrację do absolutnego minimum. Jego celem jest przede wszystkim zapewnienie pobierania danych z PSE i udostępnienie ich w atrybutach sensorów, tak aby dalsze analizy, statystyki i automatyzacje użytkownik mógł przygotować samodzielnie.
+
+Po jego włączeniu publikowane są tylko podstawowe sensory:
 
 - **Cena**
 - **Cena jutro**
+- **Kompas Energetyczny Dzisiaj**
+- **Kompas Energetyczny Jutro**
 
-W tym trybie integracja nie publikuje żadnych innych sensorów ani binary sensorów. Obejmuje to statystyki, sensory poprzedniego i następnego okresu, Kompas Energetyczny, wszystkie okna konfigurowalne, wszystkie sensory progów cenowych oraz wszystkie binary sensory. Wyłączenie tych funkcji oznacza też brak ich obliczeń.
+W tym trybie integracja nie publikuje pozostałych sensorów ani binary sensorów. Obejmuje to statystyki, sensory poprzedniego i następnego okresu, wszystkie okna konfigurowalne, wszystkie sensory progów cenowych oraz wszystkie binary sensory. Wyłączenie tych funkcji oznacza też brak ich obliczeń.
 
 - **Tryb Lite**: *domyślnie* wyłączony
 

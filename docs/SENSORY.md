@@ -2,7 +2,7 @@
 
 Jednostka cen (PLN/MWh lub PLN/kWh) wynika z [konfiguracji](KONFIGURACJA.md) integracji; sensory cenowe używają tej samej jednostki. Wyświetlane kwoty są zaokrąglane do dwóch miejsc po przecinku.
 
-Po włączeniu trybu Lite dostępne pozostają wyłącznie sensory **Cena** i **Cena jutro**. Wszystkie sekcje poniżej są wtedy wyłączone i nie publikują encji.
+Po włączeniu trybu Lite dostępne pozostają wyłącznie sensory **Cena**, **Cena jutro**, **Kompas Energetyczny Dzisiaj** i **Kompas Energetyczny Jutro**. Pozostałe sekcje poniżej są wtedy wyłączone i nie publikują encji.
 
 ## Sensory główne
 

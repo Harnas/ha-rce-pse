@@ -107,7 +107,7 @@ class TestRCEPSEIntegration:
 class TestEntitySetupOptions:
 
     @pytest.mark.asyncio
-    async def test_sensor_setup_in_lite_mode_adds_only_two_main_sensors(
+    async def test_sensor_setup_in_lite_mode_adds_main_and_peak_sensors(
         self, mock_hass, mock_coordinator
     ):
         mock_hass.data[DOMAIN] = {"entry": mock_coordinator}
@@ -120,12 +120,14 @@ class TestEntitySetupOptions:
 
         await async_setup_sensors(mock_hass, mock_entry, added_entities.extend)
 
-        assert len(added_entities) == 2
+        assert len(added_entities) == 4
         assert {entity._attr_unique_id for entity in added_entities} == {
             "rce_pse_today_price",
             "rce_pse_tomorrow_price",
+            "rce_pse_today_peak_hours",
+            "rce_pse_tomorrow_peak_hours",
         }
-        mock_hass.async_add_executor_job.assert_not_called()
+        mock_hass.async_add_executor_job.assert_called_once()
 
     @pytest.mark.asyncio
     async def test_sensor_setup_skips_disabled_windows_and_thresholds(

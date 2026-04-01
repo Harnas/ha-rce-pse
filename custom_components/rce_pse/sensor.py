@@ -82,13 +82,15 @@ async def async_setup_entry(
 ) -> None:
     _LOGGER.debug("Setting up RCE PSE sensors for config entry: %s", config_entry.entry_id)
     coordinator = hass.data[DOMAIN][config_entry.entry_id]
+    await hass.async_add_executor_job(preload_peak_hours_translation_cache)
     sensors = [
         RCETodayMainSensor(coordinator),
         RCETomorrowMainSensor(coordinator),
+        RCETodayPeakHoursSensor(coordinator),
+        RCETomorrowPeakHoursSensor(coordinator),
     ]
 
     if not is_lite_mode(config_entry):
-        await hass.async_add_executor_job(preload_peak_hours_translation_cache)
         sensors.extend(
             [
                 RCETodayProsumerSellingPriceSensor(coordinator),
@@ -112,8 +114,6 @@ async def async_setup_entry(
                 RCETomorrowMinPriceHourEndTimestampSensor(coordinator),
                 RCETomorrowMedianPriceSensor(coordinator),
                 RCETomorrowTodayAvgComparisonSensor(coordinator),
-                RCETodayPeakHoursSensor(coordinator),
-                RCETomorrowPeakHoursSensor(coordinator),
             ]
         )
 
