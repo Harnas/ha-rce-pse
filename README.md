@@ -4,7 +4,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/lewa-reka/ha-rce-pse?style=for-the-badge)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/lewa-reka/ha-rce-pse/tests.yml?style=for-the-badge)
 [![hacs_downloads](https://img.shields.io/github/downloads/lewa-reka/ha-rce-pse/latest/total?style=for-the-badge)](https://github.com/lewa-reka/ha-rce-pse/releases/latest)
-[![License: AGPL-3.0-or-later](https://img.shields.io/badge/License-AGPL--3.0--or--later-blue?style=for-the-badge)](https://spdx.org/licenses/AGPL-3.0-or-later.html)
+[![GitHub License](https://img.shields.io/github/license/lewa-reka/ha-rce-pse?style=for-the-badge)](https://spdx.org/licenses/AGPL-3.0-or-later.html)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/lewa-reka/ha-rce-pse?style=for-the-badge)
 ![Maintenance](https://img.shields.io/maintenance/yes/2222?style=for-the-badge)
 
@@ -271,7 +271,25 @@ Wpis konfiguracyjny migruje się automatycznie (okna z wartości godzinowych na 
 
 ## Licencja
 
-Projekt na licencji [GNU Affero General Public License w wersji 3 lub nowszej](https://spdx.org/licenses/AGPL-3.0-or-later.html) (SPDX: `AGPL-3.0-or-later`) — pełny tekst w pliku [LICENSE](LICENSE). To **zmiana** licencji w v2.0.0 (wcześniej Apache 2.0).
+Projekt na licencji [GNU Affero General Public License v3.0 or later](https://spdx.org/licenses/AGPL-3.0-or-later.html) (SPDX: `AGPL-3.0-or-later`) — pełny tekst w pliku [LICENSE](LICENSE). To **zmiana** licencji w v2.0.0 (wcześniej Apache 2.0).
+
+```
+RCE PSE Home Assistant integration
+Copyright (C) 2025 Lewa-Reka and RCE PSE Integration Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 
 ## Współpraca
 
